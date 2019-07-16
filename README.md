@@ -24,6 +24,7 @@ Run  the following command:
 or,
 
     celery worker -l info --beat
+    celery -A picha beat -l info
 
 We will see following 
 
