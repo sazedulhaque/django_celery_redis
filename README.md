@@ -20,11 +20,10 @@ https://redis.io/
 
 Run  the following command:
 
-    celery worker -l info -B
+    celery worker -A celery_redis_django -l info -B
 or,
 
-    celery worker -l info --beat
-    celery -A celery_redis_django beat -l info
+    celery worker -A celery_redis_django -l info --beat #celery_redis_django = apps name
 
 We will see following 
 
